@@ -1,0 +1,6 @@
+gradio
+requests
+matplotlib
+opencv-python-headless
+pyzbar
+numpy
