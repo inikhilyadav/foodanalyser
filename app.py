@@ -502,3 +502,7 @@ interface.launch(share=True)
 # Click the public https://....gradio.live link printed above and open
 # it in its own browser tab - the camera tab works normally there.
 # (Upload and manual search work fine either way.)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 7860))
+    demo.launch(server_name="0.0.0.0", server_port=port)
