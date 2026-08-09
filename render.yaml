@@ -2,7 +2,7 @@ services:
   - type: web
     name: food-health-analyzer
     runtime: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: apt-get update && apt-get install -y libzbar0 && pip install -r requirements.txt
     startCommand: python app.py
     envVars:
       - key: PYTHON_VERSION
